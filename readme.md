@@ -26,3 +26,10 @@ Welcome to the AI Project Builder! This script utilizes the Gemini API to assist
 ## Additional Notes
 
 - The script relies on the Gemini Pro API for generating project code. If the output is not in the desired format you may get an error ,  you may need to adjust your project description.
+
+## Example
+
+
+
+https://github.com/Balaji-Avk/application-builder-ai/assets/132835499/fa69d88e-55cd-46c3-a52c-d9edc8c1405b
+
