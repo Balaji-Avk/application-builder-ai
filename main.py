@@ -41,15 +41,21 @@ instruction = textwrap.dedent("""
 
 #getting response from the model
 
-response = model.generate_content(instruction + description)
-
+try :
+  response = model.generate_content(instruction + description)
+except:
+  print('Invalid API key')
+  exit()
 
 print('Build complete , Creating files.... \n')
 
-jsonfor = json.loads(response.text[8:-3])
+try:
+  jsonfor = json.loads(response.text[8:-3])
 
-jsonfor = list(jsonfor)
-
+  jsonfor = list(jsonfor)
+except:
+  print("please rewrite the description and try again")
+  exit()
 
 for i in jsonfor :
   createFile(i['file_name'],i['code'])
